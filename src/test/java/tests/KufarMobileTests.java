@@ -8,15 +8,13 @@ import utils.PropertyReader;
 
 import java.time.Duration;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class KufarMobileTests extends BaseTest {
 
     MobileMainPage mainPage = new MobileMainPage();
     MobileSearchResultPage resultsPage = new MobileSearchResultPage();
 
     @Test
-    @Order(1)
-    @DisplayName("1. Поиск iPhone 15 и проверка заголовка")
+    @DisplayName("Поиск iPhone 15 и проверка заголовка")
     void searchIphoneTest() {
         String query = PropertyReader.getProperty("search.query");
         mainPage.openPage();
@@ -27,8 +25,7 @@ public class KufarMobileTests extends BaseTest {
     }
 
     @Test
-    @Order(2)
-    @DisplayName("2. Поиск некорректных данных")
+    @DisplayName("Поиск некорректных данных")
     void invalidSearchTest() {
         mainPage.openPage();
         mainPage.search("asdfghjkl12345");
@@ -37,8 +34,7 @@ public class KufarMobileTests extends BaseTest {
     }
 
     @Test
-    @Order(3)
-    @DisplayName("3. Переход в профиль через нижнее меню")
+    @DisplayName("Переход в профиль через нижнее меню")
     void profileMenuTest() {
         mainPage.openPage();
         mainPage.clickProfileTab();
@@ -49,8 +45,7 @@ public class KufarMobileTests extends BaseTest {
     }
 
     @Test
-    @Order(4)
-    @DisplayName("4. Проверка видимости логотипа в хедере")
+    @DisplayName("Проверка видимости логотипа в хедере")
     void logoVisibilityTest() {
         mainPage.openPage();
 
