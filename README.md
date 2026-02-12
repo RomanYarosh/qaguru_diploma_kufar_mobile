@@ -80,7 +80,7 @@
 
 ## 📊 Результаты тестирования
 
-### 1. Отчетность в Allure
+### 1. Отчетность в [Allure](https://jenkins.autotests.cloud/job/qaguru_diploma_kufar_mobile/15/allure/)
    Для каждого теста в Allure формируется подробный отчет с описанием шагов. Благодаря Selenide, в отчет автоматически прикрепляются скриншоты и исходный код страницы в случае падения.
 <p align="center">
 <img src="images/screenshots/allure_mob.png" width="850">
@@ -90,7 +90,7 @@
 <img src="images/screenshots/allure_mob2.png" width="850">
 </p> 
 
-### 2. Запуск в BrowserStack
+### 2. Запуск в [BrowserStack](https://automate.browserstack.com/projects/Kufar+Mobile+Project/builds/Mobile-Web-Final/19?tab=tests&testListView=spec&details=2795266482)
    Все тесты проходят в облаке на реальном устройстве. В панели BrowserStack Automate сохраняется видеозапись каждого прогона, логи устройства и сетевые логи.
 
 <p align="center">
@@ -101,7 +101,7 @@
 <img src="images/screenshots/browserstack.gif" width="450">
 </p> 
 
-### 3. CI/CD в Jenkins
+### 3. CI/CD в [Jenkins](https://jenkins.autotests.cloud/job/qaguru_diploma_kufar_mobile/)
    Сборка проекта автоматизирована в Jenkins. Параметры доступа к облаку передаются через среду окружения, обеспечивая безопасность данных.
 <p align="center">
 <img src="images/screenshots/jenkins_mob.png" width="850">
